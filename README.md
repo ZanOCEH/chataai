@@ -1,6 +1,6 @@
 # Chat AI Gratis Menggunakan API
 
-Script ini memungkinkan Anda untuk membuat aplikasi Chat AI sederhana menggunakan API dari `https://github.com/ZanOCEH/chataai.git`. Dengan script ini, Anda dapat mengintegrasikan layanan AI chat secara mudah dan gratis menggunakan HTML, CSS, JavaScript, dan Bootstrap.
+Script ini memungkinkan Anda untuk membuat aplikasi Chat AI sederhana menggunakan API dari `https://endpoint.web.id`. Dengan script ini, Anda dapat mengintegrasikan layanan AI chat secara mudah dan gratis menggunakan HTML, CSS, JavaScript, dan Bootstrap.
 
 ## Fitur
 - **Gratis**: Menggunakan API dari `https://github.com/ZanOCEH/chataai.git` tanpa biaya.
