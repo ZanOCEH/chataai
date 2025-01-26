@@ -10,7 +10,6 @@ Script ini memungkinkan Anda untuk membuat aplikasi Chat AI sederhana menggunaka
 
 ## Persyaratan
 - Browser modern (Chrome, Firefox, Edge, dll.)
-- Koneksi internet untuk mengakses API
 
 ## Cara Penggunaan
 
