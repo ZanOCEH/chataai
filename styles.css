@@ -1,0 +1,99 @@
+:root {
+    --bg-color-light: #f8f9fa;
+    --text-color-light: #212529;
+    --bg-color-dark: #212529;
+    --text-color-dark: #f8f9fa;
+    --bubble-color-ai-light: #f8d7da;
+    --bubble-color-user-light: #d1e7dd;
+    --bubble-color-ai-dark: #884242;
+    --bubble-color-user-dark: #2c6e49;
+}
+
+body {
+    background-color: var(--bg-color, var(--bg-color-light));
+    color: var(--text-color, var(--text-color-light));
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-bubble {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s;
+    max-width: 75%;
+}
+
+.chat-bubble.user {
+    background-color: var(--bubble-color-user, var(--bubble-color-user-light));
+    text-align: right;
+    align-self: flex-end;
+}
+
+.chat-bubble.ai {
+    background-color: var(--bubble-color-ai, var(--bubble-color-ai-light));
+    text-align: left;
+    align-self: flex-start;
+}
+
+.typing {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    border-radius: 50%;
+    background-color: var(--text-color, var(--text-color-light));
+    animation: blink 1s infinite ease-in-out alternate;
+}
+
+.typing:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.theme-switcher {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.theme-switcher.sun {
+    color: #f39c12;
+}
+
+.theme-switcher.moon {
+    color: #3498db;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
